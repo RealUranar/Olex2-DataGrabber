@@ -1,0 +1,11 @@
+
+DataGrabber{
+  gui{
+    location = 'tools'
+      .type = str
+      .help = The tab item where the test GUI shall appear.
+    before = 'images'
+      .type = str
+      .help = The tool before which the test GUI shall appear.
+    }
+}

@@ -1,0 +1,33 @@
+
+<!-- #include tool-top gui/blocks/tool-top.htm;image=#image;onclick=#onclick;1; -->
+<!-- #include tool-row-help gui/blocks/tool-row-help.htm;name=DataGrabber_1; help_ext=DataGrabber_1;1; -->
+  <td ALIGN='left' width='100%'>
+    <b>Tool to collect the current refinement Information</b>
+  </td>
+<!-- #include row_table_off gui/blocks/row_table_off.htm;1; -->
+
+<!-- #include tool-row-help gui/blocks/tool-row-help.htm;name=DataGrabber_2; help_ext=DataGrabber_2;1; -->
+  $+
+  html.Snippet("gui/snippets/gui-link-button",
+  "value='Grab Data'",
+  "onclick=spy.DataGrabber.grab_data() >> html.Update()",
+  "bgcolor=GetVar(HtmlTableRowBgColour)",
+  "td1=<td width="100%" align='center'>",
+  )
+  $-
+<!-- #include row_table_off gui/blocks/row_table_off.htm;1; -->
+
+<!-- #include tool-row-help gui/blocks/tool-row-help.htm;name=DataGrabber_3; help_ext=DataGrabber_3;1; -->
+  $+
+  html.Snippet("gui/snippets/gui-link-button",
+  "value='Perform refinement'",
+  "onclick=spy.DataGrabber.run_refinement() >> html.Update()",
+  "bgcolor=GetVar(HtmlTableRowBgColour)",
+  "td1=<td width="100%" align='center'>",
+  )
+  $-
+<!-- #include row_table_off gui/blocks/row_table_off.htm;1; -->
+
+<!-- #include h3-DataGrabber-extras $GetVar(DataGrabber_plugin_path)\h3-DataGrabber-extras.htm;gui\blocks\tool-h3-off.htm;image=h3-DataGrabber_extras;onclick=;colspan=1;2; -->
+
+<!-- #include tool-footer gui/blocks/tool-footer.htm;colspan=2;1; -->
